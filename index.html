@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Inicio de Sesión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <video autoplay muted loop id="video"
+    poster="https://www.adslzone.net/app/uploads-adslzone.net/2017/03/fondopantalla4K.jpg">
+    <source src="imagenes/video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="capa_login">
+    <header id="header">
+      <a href="#"> <img src="imagenes/logo.png" alt="" class="logo">
+        <img src="imagenes/logo2.png" class="responsive_logo">
+      </a>
+      <div class="info">
+        <a href="#medidas_seguridad">
+          <i class="fas fa-lock fa-lg"></i> Información de Seguridad
+        </a>
+      </div>
+    </header>
+
+    <main style="height: 100vh;">
+      <form class="login-form col-lg-4 needs-validation" action="inicio.html" novalidate>
+        <div class="form-group">
+          <h5> Acceso a tu Banco Online</h5>
+          <hr class="animacion_login">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputuser">Cédula de Identidad</label>
+          <input type="number" class="form-control" id="exampleInputuser" aria-describedby="userHelp" required>
+          <small id="userHelp" class="form-text text-muted">Introduzca su cédula sin guiones ni puntos</small>
+          <div class="invalid-feedback">
+            Debe introducir un usuario válido
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" required>
+          <div class="invalid-feedback">
+            Debe introducir una contraseña válida
+          </div>
+        </div>
+
+        <button type="submit" class="btn boton-form">Entrar</button>
+      </form>
+    </main>
+    <br>
+    <section id="medidas_seguridad">
+      <h5>3 Consejos de Seguridad</h5>
+      <div class="row">
+
+        <div class="card text-white text-center p-3 col-lg-4">
+          <blockquote class="blockquote mb-0">
+            <p>Nunca compartas tu contraseña.</p>
+            <br>
+            <i class="fas fa-lock fa-3x"></i>
+          </blockquote>
+        </div>
+
+        <div class="card text-white text-center p-3 col-lg-3">
+          <blockquote class="blockquote mb-0">
+            <p>Cambia tu contraseña cada 3 meses</p>
+            <i class="far fa-calendar-alt fa-3x"></i>
+          </blockquote>
+        </div>
+        <div class="card text-white text-center p-3 col-lg-4">
+          <blockquote class="blockquote mb-0">
+            <p>Accede al portal sólo en dispositivos de confianza.</p>
+
+            <i class="fas fa-tablet-alt fa-3x"></i>
+
+          </blockquote>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer id="footer">
+
+    <div class="row">
+      <div class="col-lg-10 col-md-8 col-sm-12">
+        <div><i class="fas fa-map-marker-alt"></i> Av Santiago de León 6029, Ofic. 720</div>
+        <div><i class="fas fa-phone-square-alt"></i> +598 2016 0156 int 123 Soporte técnico</div>
+        <div><i class="far fa-envelope"></i> jesusmu19921@gmail.com</div>
+        <br>
+        <div class="redes_sociales">
+          <a href=""><i class="fab fa-instagram-square fa-2x"></i></a>
+          <a href=""><i class="fab fa-facebook-square fa-2x"></i></a>
+          <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href=""><i class="fab fa-google-plus-square fa-2x"></i></a>
+          Copyright 2020 - Desarrollador: Jesús Muñoz
+        </div>
+
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-12">
+        <img src="imagenes/iso.png" alt="">
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+
+  <script src="https://kit.fontawesome.com/7e0ea099ba.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
